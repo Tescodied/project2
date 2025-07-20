@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnity - Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="../media/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo animatable">
+                <a href="../home/index.html" class="logo">Learnity</a>
+            </div>
+
+            <nav>
+                <a href="#" class="nav-link animatable">
+                    <span class="nav-icon">
+                        <img class="nav-img" src="../media/dashboard.png" alt="dashboard icon">
+                    </span>
+                    <!--Dashboard-->
+                </a>
+                <a href="#" class="nav-link animatable">
+                    <span class="nav-icon">
+                        <img class="nav-img" src="../media/books.png" alt="assignments icon">
+                    </span>
+                    <!--Assignments-->
+                </a>
+                <a href="#" class="nav-link animatable">
+                    <span class="nav-icon">
+                        <img class="nav-img" src="../media/controller.png" alt="games icon">
+                    </span>
+                    <!--Games-->
+                </a>
+                <a href="#" class="nav-link animatable">
+                    <span class="nav-icon">
+                        <img class="nav-img" src="../media/graph.png" alt="progress icon">
+                    </span>
+                    <!--Progress-->
+                </a>
+                <a href="#" class="nav-link animatable">
+                    <span class="nav-icon">
+                        <img class="nav-img" src="../media/ai.png" alt="ai tutor icon">
+                    </span>
+                    <!--AI Tutor-->
+                </a>
+                <a href="#" class="nav-link animatable">
+                    <span class="nav-icon">
+                        <img class="nav-img" src="../media/achievements.png" alt="achievements icon">
+                    </span>
+                    <!--Achievements-->
+                </a>
+                <a href="#" class="nav-link animatable">
+                    <span class="nav-icon">
+                        <img class="nav-img" src="../media/setting.png" alt="settings icon">
+                    </span>
+                    <!--Settings-->
+                </a>
+            </nav>
+
+
+            <div class="user-info">
+                <div class="account-info">
+                    <div class="user-avatar animatable">JS</div>
+                    <div class="user-details">
+                        <h3>John Smith</h3>
+                        <p>8w/Ma1</p>
+                    </div>
+                </div>
+                <button class="logout-btn animatable">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="left-panel">
+            <!-- Quick Activities -->
+            <div class="quick-activities section-div">
+                <div class="side-header">
+                    <h3>Quick Activities</h3>
+                    <div class="minimise-div">
+                        <button class="minimise-btn" id="activities-minimise" value="active">―</button>
+                    </div>
+                </div>
+                <div class="activity-grid" id="activities-section">
+                    <a href="#" class="activity-card">
+                        <div class="activity-icon">🎯</div>
+                        <div class="activity-name">Math Quiz</div>
+                    </a>
+                    <a href="#" class="activity-card">
+                        <div class="activity-icon">🧪</div>
+                        <div class="activity-name">Science Lab</div>
+                    </a>
+                    <a href="#" class="activity-card">
+                        <div class="activity-icon">📖</div>
+                        <div class="activity-name">Reading</div>
+                    </a>
+                    <a href="#" class="activity-card">
+                        <div class="activity-icon">🎮</div>
+                        <div class="activity-name">Word Game</div>
+                    </a>
+                </div>
+            </div>
+
+            <section class="left-subsection">
+                <div class="user-summary-card section-div">
+                    <div class="user-summary-header">
+                        <h3>Recent Analytics 📈</h3>
+                    </div>
+                    <div class="analytics">
+                        <div class="analytics-chart">
+                            <div class="chart-container">
+                                <div class="chart-canvas">
+                                    <div class="bar-chart">
+                                        <div class="bar math" style="height: 78%;" data-value="78">
+                                            <div class="bar-value">78%</div>
+                                            <div class="bar-label">Math</div>
+                                        </div>
+                                        <div class="bar science" style="height: 65%;" data-value="65">
+                                            <div class="bar-value">65%</div>
+                                            <div class="bar-label">Science</div>
+                                        </div>
+                                        <div class="bar english" style="height: 45%;" data-value="45">
+                                            <div class="bar-value">45%</div>
+                                            <div class="bar-label">English</div>
+                                        </div>
+                                        <div class="bar history" style="height: 82%;" data-value="82">
+                                            <div class="bar-value">82%</div>
+                                            <div class="bar-label">History</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analytics-summary">
+                                    <div class="summary-item">
+                                        <div class="summary-value" id="avgScore">67.5%</div>
+                                        <div class="summary-label">Average</div>
+                                    </div>
+                                    <div class="summary-item">
+                                        <div class="summary-value" id="bestSubject">History</div>
+                                        <div class="summary-label">Best</div>
+                                    </div>
+                                    <div class="summary-item">
+                                        <div class="summary-value" id="weeklyProgress">+5%</div>
+                                        <div class="summary-label">This Week</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Card -->
+            <div class="welcome-card">
+                <div class="welcome-content">
+                    <h2>Welcome back, John! 👋</h2>
+                    <p>You're doing great! Keep up the excellent work in your studies.</p>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <section class="progress-section section-div">
+                <div class="section-header" style="margin-top: 10px;">
+                    <h2 class="section-title">Your Progression</h2>
+                </div>
+                <div class="progress-grid">
+                    <div class="progress-item animatable section-div">
+                        <h4>Mathematics</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%"></div>
+                        </div>
+                        <p class="progress-text">78% Complete • Strong</p>
+                    </div>
+                    <div class="progress-item animatable section-div">
+                        <h4>Science</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <p class="progress-text ">65% Complete • Good</p>
+                    </div>
+                    <div class="progress-item animatable section-div">
+                        <h4>English</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%"></div>
+                        </div>
+                        <p class="progress-text">45% Complete • Needs Work</p>
+                    </div>
+                    <div class="progress-item animatable section-div">
+                        <h4>History</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 82%"></div>
+                        </div>
+                        <p class="progress-text">82% Complete • Excellent</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Assignments Section -->
+            <section class="assignments-section section-div">
+                <div class="section-header">
+                    <h2 class="section-title">Assignments</h2>
+                </div>
+                <div class="assignment-list">
+                    <div class="assignment-item section-div" id="pending">
+                        <div class="assignment-info">
+                            <div class="assignment-header">
+                                <h4>Maths: Quadratic Equations Practice</h4>
+                            </div>
+                            <p class="assignment-meta">Due: Tomorrow <br>Questions: 10</p>
+                        </div>
+                        <div class="assignment-btns">
+                            <span class="assignment-status status-pending">Pending</span>
+                            <button class="start-btn animatable">Start</button>
+                        </div>
+                    </div>
+                    <div class="assignment-item section-div" id="completed">
+                        <div class="assignment-info">
+                            <div class="assignment-header">
+                                <h4>Biology: Photosynthesis Quiz</h4>
+                            </div>
+                            <p class="assignment-meta">Due: Friday <br>Questions: 15</p>
+                        </div>
+                        <div class="assignment-btns">
+                            <span class="assignment-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="assignment-item section-div" id="overdue">
+                        <div class="assignment-info">
+                            <div class="assignment-header">
+                                <h4>History: Battle of Hastings Essay</h4>
+                            </div>
+                            <p class="assignment-meta">Due: Yesterday <br>Words: 500</p>
+                        </div>
+                        <div class="assignment-btns">
+                            <span class="assignment-status status-overdue">Overdue</span>
+                            <button class="start-btn animatable">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Panel -->
+        <aside class="right-panel">
+            <!-- AI Chat -->
+            <div class="ai-chat section-div">
+                <div class="side-header">
+                    <h3>AI Tutor</h3>
+                    <div class="minimise-div">
+                        <button class="minimise-btn" id="ai-chat-minimise" value="active">―</button>
+                    </div>
+                </div>
+                <div id="ai-section">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai section-div">
+                            Hi John! I'm here to help you with your studies. What would you like to work on today?
+                        </div>
+                        <div class="message user section-div">
+                            I'm struggling with quadratic equations. Can you help?
+                        </div>
+                        <div class="message ai section-div">
+                            Of course! Quadratic equations are in the form ax² + bx + c = 0. Let's start with a simple
+                            example: x² - 5x + 6 = 0. Would you like me to show you how to solve this?
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="chatInput" placeholder="Ask me anything...">
+                        <button onclick="sendMessage()" style="font-size: 1.1rem;" class="animatable">Send</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Achievements -->
+            <div class="achievements section-div">
+                <h3>Recent Achievements</h3>
+                <div class="achievement-list">
+                    <div class="achievement-badge">
+                        <span>🏆</span>
+                        Math Master
+                    </div>
+                    <div class="achievement-badge">
+                        <span>⭐</span>
+                        Quick Learner
+                    </div>
+                    <div class="achievement-badge">
+                        <span>🎯</span>
+                        Perfect Score
+                    </div>
+                    <div class="achievement-badge">
+                        <span>🔥</span>
+                        5 Day Streak
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <script src="dashboard.js" defer></script>
+</body>
+
+</html>
