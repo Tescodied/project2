@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnity - Sign Up & Login</title>
+    <link rel="icon" href="../media/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <a href="../home/index.html" class="back-to-home">← Back to Home</a>
+
+    <div class="auth-container">
+        <div class="logo">
+            <h1>Learnity</h1>
+            <p>Personalized Learning for Every Student</p>
+        </div>
+
+        <div class="auth-tabs">
+            <button class="tab-button active" data-tab="login">Login</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-section active" id="login">
+            <form id="loginForm">
+                <div class="user-type-selector">
+                    <div class="user-type selected" data-type="teacher">
+                        <div class="user-type-icon">👩‍🏫</div>
+                        <h3>Teacher</h3>
+                        <p>Manage classes</p>
+                    </div>
+                    <div class="user-type" data-type="student">
+                        <div class="user-type-icon">🎓</div>
+                        <h3>Student</h3>
+                        <p>Start learning</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+
+                <div class="toggle-form">
+                    <a href="#" id="forgotPassword">Forgot password?</a>
+                </div>
+            </form>
+
+            <div class="divider">
+                <span>Or continue with</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn">
+                    <span>🔍</span> Google
+                </button>
+                <button class="social-btn">
+                    <span>📘</span> Microsoft
+                </button>
+            </div>
+
+            <div class="toggle-form">
+                Don't have an account? <a href="#" data-toggle="signup">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js" defer></script>
+</body>
+
+</html>

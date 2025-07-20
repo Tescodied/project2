@@ -1,0 +1,15 @@
+{
+    "students": [
+        {
+            "name": "Alice",
+            "class": "8w/Ma1",
+            "email": "alice@tollbaracademy.co.uk",
+            "level": 3
+        },
+        {
+            "name": "Bob",
+            "email": "bob@example.com",
+            "level": 2
+        }
+    ]
+}
